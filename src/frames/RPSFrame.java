@@ -57,12 +57,12 @@ public class RPSFrame extends JFrame {
             game.add(game.getRematchPanel(), BorderLayout.SOUTH);
             game.getRematchPanel().setVisible(true);
 
-            if (cpuMove == 1) {
+            if (cpuMove == 2) {
                 game.getRematchPanel().getResult().setText("IT'S A TIE!");
-            } else if (cpuMove == 2) {
+            } else if (cpuMove == 3) {
                 game.getRematchPanel().getResult().setText("YOU LOSE!");
                 sidebar.setLoseCount(sidebar.getLoseCount() + 1);
-            } else if (cpuMove == 3) {
+            } else if (cpuMove == 1) {
                 game.getRematchPanel().getResult().setText("YOU WIN!");
                 sidebar.setWinCount(sidebar.getWinCount() + 1);
             }
@@ -77,12 +77,12 @@ public class RPSFrame extends JFrame {
             game.add(game.getRematchPanel(), BorderLayout.SOUTH);
             game.getRematchPanel().setVisible(true);
 
-            if (cpuMove == 1) {
+            if (cpuMove == 3) {
                 game.getRematchPanel().getResult().setText("IT'S A TIE!");
-            } else if (cpuMove == 2) {
+            } else if (cpuMove == 1) {
                 game.getRematchPanel().getResult().setText("YOU LOSE!");
                 sidebar.setLoseCount(sidebar.getLoseCount() + 1);
-            } else if (cpuMove == 3) {
+            } else if (cpuMove == 2) {
                 game.getRematchPanel().getResult().setText("YOU WIN!");
                 sidebar.setWinCount(sidebar.getWinCount() + 1);
             }
